@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
     const layout = [
       ['7', '8', '9', '/'],
-      ['4', '5', '6', 'x'],
+      ['4', '5', '6', '*'],
       ['1', '2', '3', '-'],
       ['0', '+'],
       ['C', '=']
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
         button.classList.add('button');
         if (/[0-9]/.test(buttonValue)) {
           button.classList.add('number');
-        } else if (buttonValue === '+' || buttonValue === '-' || buttonValue === 'x' || buttonValue === '/') {
+        } else if (buttonValue === '+' || buttonValue === '-' || buttonValue === '*' || buttonValue === '/') {
           button.classList.add('operator');
         } else if (buttonValue === '=') {
           button.classList.add('equal');
